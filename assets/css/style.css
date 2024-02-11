@@ -481,6 +481,15 @@ main {
   padding: 20px 7px;
   transition: color var(--transition-1);
 }
+.navbar-item a {
+  color: var(--light-gray);
+  font-size: var(--fs-9s);
+  padding: 20px 7px;
+  transition: color var(--transition-1);
+}
+.navbar-item a:hover {
+  color: var(--orange-yellow-crayola);
+}
 
 .navbar-link:hover,
 .navbar-link:focus { color: var(--light-gray-70); }
@@ -517,9 +526,13 @@ main {
 .service-title { margin-bottom: 20px; }
 
 .service-list {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .service-item {
